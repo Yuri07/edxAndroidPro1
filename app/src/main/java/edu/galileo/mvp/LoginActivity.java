@@ -10,6 +10,9 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import de.hdodenhof.circleimageview.CircleImageView;
+
+import edu.galileo.mvp.lib.ImageLoader;
 
 /**
  * A login screen that offers login via email/password.
@@ -19,6 +22,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
     private LoginPresenter loginPresenter;
 
     // UI references.
+    private CircleImageView imgApp;
     private AutoCompleteTextView mEmailView;
     private EditText mPasswordView;
     private View mProgressView;
@@ -29,6 +33,8 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         // Set up the login form.
+        imgApp = (CircleImageView) findViewById(R.id.imgApp);
+
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
 
         mPasswordView = (EditText) findViewById(R.id.password);
@@ -46,6 +52,11 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
         mProgressView = findViewById(R.id.login_progress);
 
         loginPresenter = new LoginPresenterImpl(this);
+
+        edxGlideImgApp app = (edxGlideImgApp) getApplication();
+        ImageLoader imageLoader = app.getImageLoader();
+        imageLoader.load(imgApp,"https://androiddevsimplified.files.wordpress.com/2016/01/android-logo-png-05073.png");
+
     }
 
     /**

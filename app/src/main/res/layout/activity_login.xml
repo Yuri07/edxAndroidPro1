@@ -30,6 +30,16 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imgApp"
+                android:layout_gravity="center"
+                android:layout_width="104dp"
+                android:layout_height="104dp"
+                android:layout_marginRight="16dp"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#FF000000"/>
+
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">

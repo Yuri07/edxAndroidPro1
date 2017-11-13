@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Mvp.iml" filepath="$PROJECT_DIR$/Mvp.iml" />
+      <module fileurl="file://C:\Users\yuri_\AndroidStudioProjects\AppProfissional\Exercicios quizz\edxAndroidPro1\Mvp.iml" filepath="C:\Users\yuri_\AndroidStudioProjects\AppProfissional\Exercicios quizz\edxAndroidPro1\Mvp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/edxAndroidPro1.iml" filepath="$PROJECT_DIR$/edxAndroidPro1.iml" />
     </modules>
   </component>
 </project>
